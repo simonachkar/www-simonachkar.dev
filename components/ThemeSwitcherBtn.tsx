@@ -9,7 +9,7 @@ function ThemeSwitcherBtn() {
         <>
             <button
                 type="button"
-                className="text-sm p-2 hover:bg-slate-100 rounded"
+                className="text-sm p-2 hover:bg-slate-100 rounded dark:hover:bg-slate-700"
                 onClick={() => toggleTheme((prev) => !prev)}
             >
                 {

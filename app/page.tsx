@@ -6,9 +6,9 @@ import ThemeSwitcherBtn from "@/components/ThemeSwitcherBtn";
 
 export default function Home() {
   return (
-    <main className="mx-auto max-w-screen-xl px-6 py-12" style={{ minHeight: '75vh' }}>
-      <div className="max-w-screen-sm">
-        <div className="px-2 mb-12 flex justify-end gap-5">
+    <main className="mx-auto dark:bg-slate-800 dark:text-slate-200" style={{ minHeight: '75vh' }}>
+      <div className="max-w-screen-xl px-6 py-12">
+        <div className="px-2 mb-12 flex justify-end gap-5 max-w-screen-sm">
           <LanguageSelector />
           <ThemeSwitcherBtn />
         </div>

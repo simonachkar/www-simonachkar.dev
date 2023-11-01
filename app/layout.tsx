@@ -19,7 +19,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={font.className}>
         {children}
-        <footer className="max-w-md px-5 pb-16 text-xs text-slate-500 sm:pb-0">
+        <footer className="max-w-md px-5 pb-16 text-xs text-slate-500 sm:pb-0 dark:bg-slate-800 dark:text-slate-200">
           <Image
             src="/logo.png"
             alt="Simon Achkar Logo"
