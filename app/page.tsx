@@ -2,7 +2,7 @@
 
 import LanguageSelector from "@/components/LanguageSelector";
 import Socials from "@/components/Socials";
-import ThemeSwitcherBtn from "@/components/ThemeSwitcherBtn";
+import ThemeSwitcher from "@/components/ThemeSwitcherBtn";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       <div className="px-6 py-12">
         <div className="px-2 mb-12 flex justify-end gap-5">
           <LanguageSelector />
-          <ThemeSwitcherBtn />
+          <ThemeSwitcher />
         </div>
 
         <div>

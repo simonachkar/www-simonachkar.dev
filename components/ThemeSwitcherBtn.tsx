@@ -1,19 +1,33 @@
-import { useState } from "react";
+"use client";
+import { useState, useEffect } from "react";
+import { useTheme } from "next-themes";
 import ThemeLight from "./svg/ThemeLight";
 import ThemeDark from "./svg/ThemeDark";
 
-function ThemeSwitcherBtn() {
-    const [theme, toggleTheme] = useState(true)
-    
+
+export const ThemeSwitcher = () => {
+  const [mounted, setMounted] = useState(false);
+  const { theme, setTheme } = useTheme();
+
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+
+  if (!mounted) {
+    return null;
+  }
+
     return (
         <>
             <button
                 type="button"
                 className="text-sm p-2 hover:bg-slate-100 rounded dark:hover:bg-slate-700"
-                onClick={() => toggleTheme((prev) => !prev)}
+                onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
             >
                 {
-                    theme ? (
+                    theme === "light" ? (
                         <ThemeLight />
                     ) : (
                         <ThemeDark />)
@@ -23,4 +37,4 @@ function ThemeSwitcherBtn() {
     );
 }
 
-export default ThemeSwitcherBtn;
+export default ThemeSwitcher;
