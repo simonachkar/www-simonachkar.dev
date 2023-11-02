@@ -7,6 +7,6 @@
   "Footer": {
     "copyright": "© سيمون أشقر",
     "builtWith": "تم البناء باستخدام Next.js و Tailwind CSS، تمت الاستضافة مع Vercel. تم وضع النص باستخدام خطوط Rubik و Montserrat.",
-    "madeWith":"صنع مع"
+    "madeWith": "صنع مع"
   }
 }

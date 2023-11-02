@@ -15,24 +15,28 @@ export async function generateStaticParams() {
 
 export const metadata: Metadata = {
   title: 'Simon Achkar | Software Developer',
-  description: 'Simon Achkar is a Full-Stack Software Developer who builds digital solutions for the web',
+  description:
+    'Simon Achkar is a Full-Stack Software Developer who builds digital solutions for the web',
 }
 
 export default function RootLayout({
   children,
   params,
 }: {
-  children: React.ReactNode,
+  children: React.ReactNode
   params: { lang: string }
 }) {
-  const { lang } = params;
-  const isAr = lang === 'ar';
+  const { lang } = params
+  const isAr = lang === 'ar'
   return (
     <html lang={lang} dir={isAr ? 'rtl' : 'ltr'}>
-      <body className={`${isAr ? rubik.className : montserrat.className} dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-md`}>
-      <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-        {children}
-        <Footer lang={lang} />
+      <body
+        className={` dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-md 
+        ${isAr ? rubik.className : montserrat.className} `}
+      >
+        <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
+          {children}
+          <Footer lang={lang} />
         </ThemeProvider>
       </body>
     </html>

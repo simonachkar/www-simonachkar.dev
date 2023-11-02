@@ -5,9 +5,14 @@ https://www.linkedin.com/pulse/implement-dark-mode-tailwindcss-nextjs13-app-5-si
 https://nextjs.org/docs/app/building-your-application/routing/internationalization
 https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing
 
+https://blog.stackademic.com/effortless-code-formatting-setting-up-prettier-with-next-js-13-460cbc6bbe2c
+
+
+
 Todo:
 
-- Clean code
+- i18n: Make /en the default /
+- Remove any console warning
 - Fix types (no any)
 - Refactor
 - Reformat
