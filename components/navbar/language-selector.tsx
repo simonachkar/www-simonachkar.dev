@@ -12,7 +12,7 @@ export default function LocaleSwitcher() {
     const segments = pathName.split('/')
     segments[1] = locale
 
-    return router.push(segments.join('/'))
+    return router.push(locale === i18n.defaultLocale ? '/' : segments.join('/'))
   }
 
   return (
