@@ -14,6 +14,7 @@ export default function Footer() {
             <p className='mt-1.5'>All content &copy; Simon Achkar</p>
             <p className='mt-1.5'>This site is built with Next.js and TailwindCSS. The source code can be found on Github.</p>
             <p className='mt-1.5'>Made with 	&hearts; and a lot of coffee.</p>
+            <p className='mt-3 font-mono font-light text-[10px] md:text-[12px]'>v0.1.0</p>
         </footer>
     )
 }
