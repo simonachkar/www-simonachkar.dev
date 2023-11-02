@@ -12,7 +12,6 @@ https://blog.stackademic.com/effortless-code-formatting-setting-up-prettier-with
 Todo:
 
 - i18n: Make /en the default /
-- Remove any console warning
 - Fix types (no any)
 - Refactor
 - Reformat

@@ -29,7 +29,7 @@ export default function RootLayout({
   const { lang } = params
   const isAr = lang === 'ar'
   return (
-    <html lang={lang} dir={isAr ? 'rtl' : 'ltr'}>
+    <html lang={lang} dir={isAr ? 'rtl' : 'ltr'} suppressHydrationWarning>
       <body
         className={` dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-md 
         ${isAr ? rubik.className : montserrat.className} `}
