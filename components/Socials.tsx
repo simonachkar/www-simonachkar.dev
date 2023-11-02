@@ -1,6 +1,6 @@
-import Email from './svg/Email'
-import Github from './svg/Github'
-import LinkedIn from './svg/LinkedIn'
+import Email from '@/components/svg/Email'
+import Github from '@/components/svg/Github'
+import LinkedIn from '@/components/svg/LinkedIn'
 
 type SocialLinkProps = {
   href: string

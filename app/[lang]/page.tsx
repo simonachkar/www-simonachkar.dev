@@ -1,14 +1,14 @@
-import { getDictionary } from '../../get-dictionaries'
-import { Locale } from '../../i18n-config'
 import LanguageSelector from '@/components/LanguageSelector'
 import Socials from '@/components/Socials'
 import ThemeSwitcher from '@/components/ThemeSwitcherBtn'
+import { getDictionary } from '@/get-dictionaries'
+import { Locale } from '@/i18n-config'
 
-export default async function Home({
-  params: { lang },
-}: {
+type PageProps = {
   params: { lang: Locale }
-}) {
+}
+
+export default async function Home({ params: { lang } }: PageProps) {
   const dictionary = await getDictionary(lang)
 
   return (

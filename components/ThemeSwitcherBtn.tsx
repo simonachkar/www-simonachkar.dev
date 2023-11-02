@@ -2,8 +2,8 @@
 
 import { useState, useEffect } from 'react'
 import { useTheme } from 'next-themes'
-import ThemeLight from './svg/ThemeLight'
-import ThemeDark from './svg/ThemeDark'
+import ThemeLight from '@/components/svg/ThemeLight'
+import ThemeDark from '@/components/svg/ThemeDark'
 
 export const ThemeSwitcher = () => {
   const [mounted, setMounted] = useState(false)

@@ -1,7 +1,12 @@
 import Image from 'next/image'
-import { getDictionary } from '../get-dictionaries'
+import { getDictionary } from '@/get-dictionaries'
+import { Locale } from '@/i18n-config'
 
-export default async function Footer({ lang }: any) {
+type FooterParams = {
+  lang: Locale
+}
+
+export default async function Footer({ lang }: FooterParams) {
   const dictionary = await getDictionary(lang)
 
   return (

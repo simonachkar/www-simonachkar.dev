@@ -1,22 +1,22 @@
 import type { Metadata } from 'next'
 import { Montserrat, Rubik } from 'next/font/google'
 import Footer from '@/components/Footer'
+import { Locale, i18n } from '@/i18n-config'
 
-import { i18n } from '../../i18n-config'
-import './globals.css'
 import { ThemeProvider } from './theme-provider'
+import './globals.css'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 const rubik = Rubik({ weight: '400', subsets: ['arabic'] })
-
-export async function generateStaticParams() {
-  return i18n.locales.map((locale) => ({ lang: locale }))
-}
 
 export const metadata: Metadata = {
   title: 'Simon Achkar | Software Developer',
   description:
     'Simon Achkar is a Full-Stack Software Developer who builds digital solutions for the web',
+}
+
+export async function generateStaticParams() {
+  return i18n.locales.map((locale) => ({ lang: locale }))
 }
 
 export default function RootLayout({
@@ -28,6 +28,7 @@ export default function RootLayout({
 }) {
   const { lang } = params
   const isAr = lang === 'ar'
+
   return (
     <html lang={lang} dir={isAr ? 'rtl' : 'ltr'} suppressHydrationWarning>
       <body
@@ -36,7 +37,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
-          <Footer lang={lang} />
+          <Footer lang={lang as Locale} />
         </ThemeProvider>
       </body>
     </html>
