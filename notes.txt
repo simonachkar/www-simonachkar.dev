@@ -1,0 +1,15 @@
+Ref:
+
+https://iconmonstr.com/weather-111-svg/
+https://www.linkedin.com/pulse/implement-dark-mode-tailwindcss-nextjs13-app-5-simple-lucas-los-arcos/
+https://next-intl-docs.vercel.app/docs/getting-started
+
+
+
+Todo:
+
+- Apply i18n with next-intl
+- Redo footer
+- Refactor
+- Reformat
+- QA on different devices
