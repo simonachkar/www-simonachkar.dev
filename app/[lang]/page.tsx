@@ -1,10 +1,17 @@
-"use client";
-
+import { getDictionary } from '../../get-dictionaries'
+import { Locale } from '../../i18n-config'
 import LanguageSelector from "@/components/LanguageSelector";
 import Socials from "@/components/Socials";
 import ThemeSwitcher from "@/components/ThemeSwitcherBtn";
 
-export default function Home() {
+export default async function Home({
+  params: { lang },
+}: {
+  params: { lang: Locale }
+}) {
+
+  const dictionary = await getDictionary(lang)
+  
   return (
     <main className="dark:bg-slate-800 dark:text-slate-200" style={{ minHeight: '75vh' }}>
       <div className="px-6 py-12">
@@ -15,13 +22,13 @@ export default function Home() {
 
         <div>
           <h1 className='text-4xl font-bold'>
-            Simon Achkar
+       {dictionary['Index'].name}
           </h1>
           <h2 className='mt-3 text-lg font-medium'>
-            Senior Software Developer at REDspace
+          {dictionary['Index'].title}
           </h2>
           <p className='mt-4'>
-            I build digital solutions for the web
+          {dictionary['Index'].tag}
           </p>
         </div>
 
