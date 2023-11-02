@@ -1,6 +1,5 @@
-import LanguageSelector from '@/components/LanguageSelector'
 import Socials from '@/components/Socials'
-import ThemeSwitcher from '@/components/ThemeSwitcherBtn'
+import Navbar from '@/components/navbar'
 import { getDictionary } from '@/get-dictionaries'
 import { Locale } from '@/i18n-config'
 
@@ -17,10 +16,7 @@ export default async function Home({ params: { lang } }: PageProps) {
       style={{ minHeight: '75vh' }}
     >
       <div className='px-6 py-12'>
-        <div className='px-2 mb-12 flex justify-end gap-5' dir='ltr'>
-          <LanguageSelector />
-          <ThemeSwitcher />
-        </div>
+        <Navbar />
 
         <div>
           <h1 className='text-4xl font-bold'>{dictionary['Index'].name}</h1>

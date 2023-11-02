@@ -14,7 +14,7 @@ export const ThemeSwitcher = () => {
   }, [])
 
   if (!mounted) {
-    return null
+    return <div className='h-10 w-10'></div>
   }
 
   return (

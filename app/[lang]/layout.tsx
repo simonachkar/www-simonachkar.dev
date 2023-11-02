@@ -3,8 +3,8 @@ import { Montserrat, Rubik } from 'next/font/google'
 import Footer from '@/components/Footer'
 import { Locale, i18n } from '@/i18n-config'
 
-import { ThemeProvider } from './theme-provider'
-import './globals.css'
+import { ThemeProvider } from '@/app/theme-provider'
+import '@/app/globals.css'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
 const rubik = Rubik({ weight: '400', subsets: ['arabic'] })

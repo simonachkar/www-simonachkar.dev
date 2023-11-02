@@ -11,8 +11,5 @@ https://blog.stackademic.com/effortless-code-formatting-setting-up-prettier-with
 
 Todo:
 
-- i18n: Make /en the default /
-- Fix types (no any)
-- Refactor
-- Reformat
+- Update README.md
 - QA on different devices
