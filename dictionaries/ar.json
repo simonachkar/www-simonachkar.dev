@@ -1,7 +1,12 @@
 {
   "Index": {
     "name": "سيمون أشقر",
-    "title": "REDspace مطوِّر برامج متقدم في",
+    "title": "مطوِّر برامج متقدم في REDspace",
     "tag": "أقوم ببناء حلول رقمية للويب"
+  },
+  "Footer": {
+    "copyright": "© سيمون أشقر",
+    "builtWith": "تم البناء باستخدام Next.js و Tailwind CSS، تمت الاستضافة مع Vercel. تم وضع النص باستخدام خطوط Rubik و Montserrat.",
+    "madeWith":"صنع مع"
   }
 }

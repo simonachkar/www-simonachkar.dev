@@ -8,7 +8,7 @@ https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing
 Todo:
 
 - Clean code
-- Redo footer
+- Fix types (no any)
 - Refactor
 - Reformat
 - QA on different devices

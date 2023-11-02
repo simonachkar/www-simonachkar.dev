@@ -7,7 +7,7 @@ import './globals.css'
 import { ThemeProvider } from './theme-provider'
 
 const montserrat = Montserrat({ subsets: ['latin'] })
-const notoSans = Rubik({ weight: '400', subsets: ['arabic'] })
+const rubik = Rubik({ weight: '400', subsets: ['arabic'] })
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
@@ -29,10 +29,10 @@ export default function RootLayout({
   const isAr = lang === 'ar';
   return (
     <html lang={lang} dir={isAr ? 'rtl' : 'ltr'}>
-      <body className={`${isAr ? notoSans.className : montserrat.className} dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-md`}>
+      <body className={`${isAr ? rubik.className : montserrat.className} dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-md`}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         {children}
-        <Footer />
+        <Footer lang={lang} />
         </ThemeProvider>
       </body>
     </html>

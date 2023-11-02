@@ -3,5 +3,10 @@
     "name": "Simon Achkar",
     "title": "Senior Software Developer at REDspace",
     "tag": "I build digital solutions for the web"
+  },
+  "Footer": {
+    "copyright": "© Simon Achkar",
+    "builtWith": "Built with Next.js and Tailwind CSS, deployed with Vercel. Text is set in the Montserrat and Rubik typefaces.",
+    "madeWith": "Made with"
   }
 }

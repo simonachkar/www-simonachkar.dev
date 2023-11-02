@@ -1,8 +1,12 @@
 import Image from 'next/image'
+import { getDictionary } from '../get-dictionaries'
 
-export default function Footer() {
+export default async function Footer({ lang }: any) {
+
+    const dictionary = await getDictionary(lang)
+
     return (
-        <footer className="w-full px-5 pb-16 text-xs sm:pb-0">
+        <footer className="w-full px-5 pb-16 text-xs sm:pb-0 max-w-md">
             <Image
                 src="/logo.png"
                 alt="Simon Achkar Logo"
@@ -11,10 +15,11 @@ export default function Footer() {
                 height={43}
                 priority
             />
-            <p className='mt-1.5'>All content &copy; Simon Achkar</p>
-            <p className='mt-1.5'>This site is built with Next.js and TailwindCSS. The source code can be found on Github.</p>
-            <p className='mt-1.5'>Made with 	&hearts; and a lot of coffee.</p>
-            <p className='mt-3 font-mono font-light text-[10px] md:text-[12px]'>v0.1.0</p>
+            <p className='mt-1.5'>{dictionary['Footer'].copyright}</p>
+            <p className='mt-1.5'>{dictionary['Footer'].builtWith}</p>
+            <p className='mt-1.5'>{dictionary['Footer'].madeWith} <span className='ml-0.5'>&hearts;</span></p>
+
+            <p className='mt-4 font-mono font-light text-[10px] md:text-[12px]'>v0.1.0</p>
         </footer>
     )
 }
