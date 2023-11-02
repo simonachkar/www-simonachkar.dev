@@ -15,7 +15,7 @@ export default async function Home({
   return (
     <main className="dark:bg-slate-800 dark:text-slate-200" style={{ minHeight: '75vh' }}>
       <div className="px-6 py-12">
-        <div className="px-2 mb-12 flex justify-end gap-5">
+        <div className="px-2 mb-12 flex justify-end gap-5" dir="ltr">
           <LanguageSelector />
           <ThemeSwitcher />
         </div>

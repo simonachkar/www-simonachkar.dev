@@ -1,12 +1,13 @@
 import type { Metadata } from 'next'
-import { Montserrat } from 'next/font/google'
+import { Montserrat, Rubik } from 'next/font/google'
 import Footer from '@/components/Footer'
 
 import { i18n } from '../../i18n-config'
 import './globals.css'
 import { ThemeProvider } from './theme-provider'
 
-const font = Montserrat({ subsets: ['latin'] })
+const montserrat = Montserrat({ subsets: ['latin'] })
+const notoSans = Rubik({ weight: '400', subsets: ['arabic'] })
 
 export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
@@ -24,9 +25,11 @@ export default function RootLayout({
   children: React.ReactNode,
   params: { lang: string }
 }) {
+  const { lang } = params;
+  const isAr = lang === 'ar';
   return (
-    <html lang={params.lang}>
-      <body className={`${font.className} dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-lg`}>
+    <html lang={lang} dir={isAr ? 'rtl' : 'ltr'}>
+      <body className={`${isAr ? notoSans.className : montserrat.className} dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-md`}>
       <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
         {children}
         <Footer />
