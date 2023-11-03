@@ -13,9 +13,9 @@
   </a>
 </p>
 
-<div style="display: flex; gap: 10px; justify-content: center; width: 200px; margin: auto;">
-    <img src="./assets//demo-en-dark.png" alt="Demo En Dark" />
-    <img  src="./assets//demo-en-light.png" alt="Demo En Dark" />
+<div style="display: flex; gap: 10px; justify-content: center; width: 150px; margin: auto;">
+    <img src="./assets//demo-dark.png" alt="Demo Dark" />
+    <img  src="./assets//demo-light.png" alt="Demo Light" />
 </div>
 
 ## Getting Started
