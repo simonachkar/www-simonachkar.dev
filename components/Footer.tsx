@@ -3,6 +3,8 @@ import parse from 'html-react-parser'
 import { getDictionary } from '@/get-dictionaries'
 import { Locale } from '@/i18n-config'
 
+const REPO_URL = 'https://github.com/simonachkar/simonachkar.dev'
+
 type FooterParams = {
   lang: Locale
 }
@@ -24,7 +26,17 @@ export default async function Footer({ lang }: FooterParams) {
       <p className='mt-1.5'>{parse(content.copyright)}</p>
       <p className='mt-1.5'>{parse(content.builtWith)}</p>
       <p className='mt-1.5'>
-        {parse(content.madeWith)} <span className='ml-0.5'>&hearts;</span>
+        {parse(content.madeWith)}{' '}
+        <span className='ml-0.5'>
+          <a
+            href={REPO_URL}
+            target='_blank'
+            rel='noreferrer'
+            style={{ textDecoration: 'none' }}
+          >
+            &hearts;
+          </a>
+        </span>
       </p>
 
       <p className='mt-4 font-mono font-light text-[10px] md:text-[12px]'>

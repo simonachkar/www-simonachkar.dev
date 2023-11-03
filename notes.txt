@@ -4,6 +4,7 @@ https://iconmonstr.com/weather-111-svg/
 https://www.linkedin.com/pulse/implement-dark-mode-tailwindcss-nextjs13-app-5-simple-lucas-los-arcos/
 https://nextjs.org/docs/app/building-your-application/routing/internationalization
 https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing
+https://www.npmjs.com/package/html-react-parser
 
 https://blog.stackademic.com/effortless-code-formatting-setting-up-prettier-with-next-js-13-460cbc6bbe2c
 
