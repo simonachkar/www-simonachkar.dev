@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { Montserrat, Rubik } from 'next/font/google'
-import Footer from '@/components/Footer'
+import Footer from '@/components/shared/footer'
 import { Locale, i18n } from '@/i18n-config'
 
 import { ThemeProvider } from '@/app/theme-provider'
