@@ -1,12 +1,12 @@
 {
   "Index": {
     "name": "Simon Achkar",
-    "title": "Développeur de Logiciels Senior chez REDspace",
+    "title": "Développeur de Logiciels Senior chez <a href='https://www.redspace.com/' target='_blank' rel='noreferrer'>REDspace</a>",
     "tag": "Je construis des solutions digitales pour le web"
   },
   "Footer": {
     "copyright": "© Simon Achkar",
-    "builtWith": "Construit avec Next.js et Tailwind CSS, déployé avec Vercel. Le texte est défini dans les polices Montserrat et Rubik.",
+    "builtWith": "Construit avec <a href='https://nextjs.org' target='_blank' rel='noreferrer'>Next.js</a> et <a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>Tailwind CSS</a>, déployé avec <a href='https://vercel.com' target='_blank' rel='noreferrer'>Vercel</a>. Le texte est défini dans les polices <a href='https://fonts.google.com/specimen/Montserrat' target='_blank' rel='noreferrer'>Montserrat</a> et <a href='https://fonts.google.com/specimen/Rubik' target='_blank' rel='noreferrer'>Rubik</a>.",
     "madeWith": "Réalisé avec"
   }
 }

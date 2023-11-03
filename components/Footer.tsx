@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import parse from 'html-react-parser'
 import { getDictionary } from '@/get-dictionaries'
 import { Locale } from '@/i18n-config'
 
@@ -8,9 +9,10 @@ type FooterParams = {
 
 export default async function Footer({ lang }: FooterParams) {
   const dictionary = await getDictionary(lang)
+  const content = dictionary['Footer']
 
   return (
-    <footer className='w-full px-5 pb-16 text-xs sm:pb-0 max-w-md'>
+    <footer className='w-full px-5 pb-16 text-xs md:text-sm sm:pb-8 max-w-md md:max-w-lg'>
       <Image
         src='/logo.png'
         alt='Simon Achkar Logo'
@@ -19,10 +21,10 @@ export default async function Footer({ lang }: FooterParams) {
         height={43}
         priority
       />
-      <p className='mt-1.5'>{dictionary['Footer'].copyright}</p>
-      <p className='mt-1.5'>{dictionary['Footer'].builtWith}</p>
+      <p className='mt-1.5'>{parse(content.copyright)}</p>
+      <p className='mt-1.5'>{parse(content.builtWith)}</p>
       <p className='mt-1.5'>
-        {dictionary['Footer'].madeWith} <span className='ml-0.5'>&hearts;</span>
+        {parse(content.madeWith)} <span className='ml-0.5'>&hearts;</span>
       </p>
 
       <p className='mt-4 font-mono font-light text-[10px] md:text-[12px]'>

@@ -5,7 +5,7 @@ import LinkedIn from '@/components/svg/LinkedIn'
 type SocialLinkProps = {
   href: string
   svg: React.JSX.Element
-  target?: string
+  target?: '_blank' | ''
 }
 
 const SocialLink = ({ href, svg, target = '' }: SocialLinkProps) => {

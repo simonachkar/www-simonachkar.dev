@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.dark a {
+  color: #4ad483;
+}
+
+.light a {
+  color: #39a265;
+}
+
+a {
+  text-decoration: underline;
+  font-weight: 500;
+}

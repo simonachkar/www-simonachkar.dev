@@ -1,3 +1,4 @@
+import parse from 'html-react-parser'
 import Socials from '@/components/Socials'
 import Navbar from '@/components/navbar'
 import { getDictionary } from '@/get-dictionaries'
@@ -9,6 +10,7 @@ type PageProps = {
 
 export default async function Home({ params: { lang } }: PageProps) {
   const dictionary = await getDictionary(lang)
+  const content = dictionary['Index']
 
   return (
     <main
@@ -19,11 +21,9 @@ export default async function Home({ params: { lang } }: PageProps) {
         <Navbar />
 
         <div>
-          <h1 className='text-4xl font-bold'>{dictionary['Index'].name}</h1>
-          <h2 className='mt-3 text-lg font-medium'>
-            {dictionary['Index'].title}
-          </h2>
-          <p className='mt-4'>{dictionary['Index'].tag}</p>
+          <h1 className='text-4xl font-bold'>{parse(content.name)}</h1>
+          <h2 className='mt-3 text-lg font-medium'>{parse(content.title)}</h2>
+          <p className='mt-4'>{parse(content.tag)}</p>
         </div>
 
         <Socials />

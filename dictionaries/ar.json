@@ -1,12 +1,12 @@
 {
   "Index": {
     "name": "سيمون أشقر",
-    "title": "مطوِّر برامج متقدم في REDspace",
+    "title": "مطوِّر برامج متقدم في <a href='https://www.redspace.com/' target='_blank' rel='noreferrer'>REDspace</a>",
     "tag": "أقوم ببناء حلول رقمية للويب"
   },
   "Footer": {
     "copyright": "© سيمون أشقر",
-    "builtWith": "تم البناء باستخدام Next.js و Tailwind CSS، تمت الاستضافة مع Vercel. تم وضع النص باستخدام خطوط Rubik و Montserrat.",
+    "builtWith": "تم البناء باستخدام <a href='https://nextjs.org' target='_blank' rel='noreferrer'>Next.js</a> و <a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>Tailwind CSS</a>، تمت الاستضافة مع <a href='https://vercel.com' target='_blank' rel='noreferrer'>Vercel</a>. تم وضع النص باستخدام خطوط <a href='https://fonts.google.com/specimen/Rubik' target='_blank' rel='noreferrer'>Rubik</a> و <a href='https://fonts.google.com/specimen/Montserrat' target='_blank' rel='noreferrer'>Montserrat</a>.",
     "madeWith": "صُنع مع"
   }
 }
