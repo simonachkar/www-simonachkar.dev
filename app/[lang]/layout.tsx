@@ -32,8 +32,8 @@ export default function RootLayout({
   return (
     <html lang={lang} dir={isAr ? 'rtl' : 'ltr'} suppressHydrationWarning>
       <body
-        className={` dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-md 
-        ${isAr ? rubik.className : montserrat.className} `}
+        className={`dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-md
+        ${isAr ? `${rubik.className} tracking-wider` : montserrat.className} `}
       >
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}

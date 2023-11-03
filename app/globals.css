@@ -14,3 +14,7 @@ a {
   text-decoration: underline;
   font-weight: 500;
 }
+
+a:hover {
+  filter: brightness(1.25);
+}
