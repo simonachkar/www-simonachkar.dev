@@ -42,14 +42,19 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load [Montserrat](https://fonts.google.com/specimen/Montserrat) for Latin (e.g. English/French) alphabet and [Rubik](https://fonts.google.com/specimen/Rubik) for the Arabic alphabet, custom Google Fonts.
 
+### SVG
+
+SVGs code from [iconmonstr](https://iconmonstr.com)
+
 ### i18n
+
+- [Next.js Internationalization](https://nextjs.org/docs/app/building-your-application/routing/internationalization)
+- [Example Repo](https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing) for simple Internationalized Routing
 
 ### Dark/Light Mode
 
-## Ref
-
-- SVGs code from [iconmonstr](https://iconmonstr.com)
 - [Guide](https://www.linkedin.com/pulse/implement-dark-mode-tailwindcss-nextjs13-app-5-simple-lucas-los-arcos/) by _Lucas Los Arcos_ to implement dark/light mode
-- [Next.js Internationalization](https://nextjs.org/docs/app/building-your-application/routing/internationalization)
-- [Example Repo](https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing) for simple Internationalized Routing.
-- [html-react-parser](https://www.npmjs.com/package/html-react-parser) for parsing JSON content
+
+### Misc
+
+- [html-react-parser](https://www.npmjs.com/package/html-react-parser) library for parsing JSON content
