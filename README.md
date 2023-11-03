@@ -1,36 +1,53 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="Logo" src="https://raw.githubusercontent.com/simonachkar/simonachkar.dev/main/public/logo.png" width="100" />
+</div>
+<h1 align="center">
+  simonachkar.dev
+</h1>
+<p align="center">
+  My personal website (4th iteration). Built with <a href='https://nextjs.org' target='_blank'>Next.js</a> & <a href='https://tailwindcss.com' target='_blank'>Tailwind CSS</a> and deployed with <a href='https://vercel.com' target='_blank' rel='noreferrer'>Vercel</a>.
+</p>
+<p align="center">
+  <a href="https://app.netlify.com/sites/brittanychiang/deploys" target="_blank">
+    <img src="https://vercelbadge.vercel.app/api/simonachkar/simonachkar.dev" alt="Vercel Status" />
+  </a>
+</p>
+
+<div style="display: flex; gap: 10px; justify-content: center; width: 200px; margin: auto;">
+    <img src="./assets//demo-en-dark.png" alt="Demo En Dark" />
+    <img  src="./assets//demo-en-light.png" alt="Demo En Dark" />
+</div>
 
 ## Getting Started
 
-First, run the development server:
+To get up and running, install dependencies and run the development server:
 
-```bash
+```
+# Install dependencies.
+npm install
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## About this project
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Next.js
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Learn More
+### Typefaces
 
-To learn more about Next.js, take a look at the following resources:
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load [Montserrat](https://fonts.google.com/specimen/Montserrat) for Latin (e.g. English/French) alphabet and [Rubik](https://fonts.google.com/specimen/Rubik) for the Arabic alphabet, custom Google Fonts.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### i18n
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### Dark/Light Mode
 
-## Deploy on Vercel
+## Ref
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- SVGs code from [iconmonstr](https://iconmonstr.com)
+- [Guide](https://www.linkedin.com/pulse/implement-dark-mode-tailwindcss-nextjs13-app-5-simple-lucas-los-arcos/) by _Lucas Los Arcos_ to implement dark/light mode
+- [Next.js Internationalization](https://nextjs.org/docs/app/building-your-application/routing/internationalization)
+- [Github Repo]https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing for simple Internationalized Routing.
+- [html-react-parser](https://www.npmjs.com/package/html-react-parser) for parsing JSON content
