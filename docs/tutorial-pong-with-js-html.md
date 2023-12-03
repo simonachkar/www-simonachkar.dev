@@ -1,9 +1,10 @@
 ---
 title: 'Building a Pong Game with HTML and JavaScript'
 date: '2019-06-08'
+lastEdited: '2023-12-03'
 ---
 
-Pong is a classic arcade game that serves as a great introduction to web game development. In this post, I will attempt to guide you through the process of building such a game using HTML and JavaScript. Inspired by a project undertaken during my undergraduate Computer Graphics course, I would like to share a simplified version of my code. Let’s get started!
+**Pong** is a classic arcade game that serves as a great introduction to web game development. In this post, I will attempt to guide you through the process of building such a game using HTML and JavaScript. Inspired by a project undertaken during my undergraduate Computer Graphics course, I would like to share a simplified version of my code. Let’s get started!
 
 🔗 [Get the Source Code here](https://github.com/simonachkar/pong).
 
@@ -24,11 +25,11 @@ Create an `index.html` file and set up the basic structure:
 
 This HTML file includes a title and links to a JavaScript file (`game.js`) where we’ll write our game logic.
 
-## Create the Game Logic (`game.js`)
+## Create the Game Logic
 
 Now, let’s dive into the JavaScript code. Create a `game.js` file. This file will handle everything from creating the canvas to updating game objects and drawing them.
 
-🔗 [Completed `game.js` file](https://github.com/simonachkar/pong/blob/master/game.js)
+🔗 [Complete `game.js` file](https://github.com/simonachkar/pong/blob/master/game.js)
 
 This JavaScript file is the heart of our Pong game. It defines the canvas, loads images for background, paddles, and the ball. It also sets up game objects, handles keyboard input, manages scoring, and implements collision detection.
 
@@ -36,7 +37,7 @@ This JavaScript file is the heart of our Pong game. It defines the canvas, loads
 
 ### 1 - `requestAnimationFrame`
 
-The heartbeat of our game, `requestAnimationFrame`, ensures smooth animations across various browsers. Credits to the ingenious [Paul Irish](https://www.paulirish.com/2011/requestanimationframe-for-smart-animating) for this function:
+`requestAnimationFrame` ensures smooth animations across various browsers. Credits goes to [Paul Irish](https://www.paulirish.com/2011/requestanimationframe-for-smart-animating) for this function:
 
 ```js
 window.requestAnimFrame = function (callback) {
@@ -53,13 +54,13 @@ window.requestAnimFrame = function (callback) {
 }
 ```
 
-This function dynamically adjusts to the browser's capabilities, requesting a new animation frame at optimal intervals. To delve deeper, I recommend checking out Paul Irish's website for a detailed explanation.
+This function dynamically adjusts to the browser's capabilities, requesting a new animation frame at optimal intervals. To delve deeper, I recommend checking out Paul Irish's [post](https://www.paulirish.com/2011/requestanimationframe-for-smart-animating) for a detailed explanation.
 
-In essence, without this function, our game will animate slowly and poorly. For additional insights, refer to the [Mozilla Developer Network docs](https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame).
+In essence, without this function, our game will animate slowly and poorly.
 
 ### 2 - Creating the Canvas
 
-Now, let's bring our game to life visually by creating the canvas. In the code snippet below, we initiate a canvas element and its rendering context:
+Now, let's create the canvas. In the code snippet below, we initiate a `canvas` element and its rendering context (`ctx`):
 
 ```js
 var canvas = document.createElement('canvas')
@@ -69,13 +70,13 @@ canvas.height = 400
 document.body.appendChild(canvas)
 ```
 
-The canvas (think about it as our game's drawing board), is generated dynamically through JavaScript. We then obtain the 2D rendering context (`ctx`), a crucial tool for issuing drawing commands on the canvas. Setting the canvas dimensions and appending it to the document ensures it becomes a visible part of our web page.
+The canvas is a HTML element (`<canvas>`), think about it as our game's drawing board. We create that element using the Document Object Model (DOM). We then obtain the 2D rendering context (`ctx`) which is going to be used to draw on the canvas later. Finally we set the canvas dimensions and append it to the document's body ensuring that it becomes visible on our web page.
 
-For a more in-depth understanding of the HTML5 Canvas API, you can refer to the [Mozilla Developer Network tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).
+For a more in-depth understanding of the HTML5 Canvas API, you can refer to the [Mozilla Developer Network Canvas API tutorial](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API/Tutorial).
 
 ### 3 - Defining the Graphics
 
-Every game needs visual graphics, so let's add up some images! In the following code snippet, we load images for the background, paddles, and ball:
+Every game needs visual graphics, so let's add up some images! In the following code snippet, we load images for the background, paddle**s**, and ball:
 
 ```js
 // Background image
@@ -105,8 +106,6 @@ ballImage.onload = function () {
 
 Here, we use the simplest method of loading images, creating instances of the Image class for each graphic. The readiness flags (`bgReady`, `paddleReady`, and `ballReady`) ensure safe drawing by waiting until the images are fully loaded, preventing potential errors.
 
-Remember, the choice of images significantly contributes to the game's visual appeal and theme.
-
 ### 4 - Defining the Game Objects
 
 In this step, we introduce crucial game elements. These include the player-controlled paddle, the computer-controlled paddle, and the dynamic ball.
@@ -134,7 +133,7 @@ var ball = {
 }
 ```
 
-Here, we establish essential variables for our game. The `player_paddle` serves as the user-controlled entity, featuring attributes such as speed (measured in pixels per second), score, and initial x and y positions. Similarly, the `ai_paddle` mirrors its computer-controlled counterpart, featuring a strategic AI trick. The `ball` object defines its position and speed, creating a symphony of movement between these core elements in our Pong game.
+Here, we establish essential variables for our game. The `player_paddle` serves as the user-controlled entity, featuring attributes such as speed (measured in pixels per second), score, and initial x and y positions. Similarly, the `ai_paddle` mirrors its computer-controlled counterpart, featuring a strategic "AI" trick. And finally, the `ball` object defines its position and speed.
 
 #### Unveiling the "AI" Trick
 
@@ -148,7 +147,7 @@ Feel free to tweak these values to experiment with different game-play dynamics 
 
 ### 5 - Tracking Player Input
 
-Now, let's step into the process of tracking player input, an important element that grants users control over the game dynamics.
+Now, let's step into the process of tracking player input, an important element that gives users control over the game dynamics.
 
 ```js
 var playerInput = {}
@@ -162,9 +161,9 @@ addEventListener('keyup', function (e) {
 })
 ```
 
-In this code snippet, we establish a system to capture and interpret player inputs. Here's how it functions:
+In this code snippet, we establish a system to capture and interpret player inputs. Here's how it works:
 
-- We initialize an object named `playerInput` to store information about the currently pressed keys.
+- We initialize an object named `playerInput` to store information about the currently pressed key.
 - The `'keydown'` event listener captures key presses, setting the corresponding key as true in the playerInput object.
 - The `'keyup'` event listener updates the playerInput object by removing the key when it is released.
 
@@ -181,13 +180,11 @@ var reset = function () {
 }
 ```
 
-The `reset` function will be called to begin a new round in our Pong game (a new ball serve). When invoked, it repositions the ball at the center of the screen, marking the beginning of a fresh round of game-play.
-
-When either of the two paddles scores, the `reset` function ensures that the game restarts.
+The `reset` function will be called to begin a new round in our Pong game (a new ball serve). When invoked, it repositions the ball at the center of the screen, marking the beginning of a fresh round of game-play. It will be called when either of the two paddles scores.
 
 ### 7 - Updating the Game State
 
-In this step, we will create an `update` function to manage the game state, controlling the movement of key game elements. This function is invoked at every interval execution.
+Now we need a function to be called every time we want to update the game state. `update` is a the function we need, it controls the movement of key game elements. This function is invoked at every interval execution.
 
 Let's break down the components of the `update` function:
 
@@ -316,13 +313,13 @@ var draw = function () {
 }
 ```
 
-For each element - background, paddles, and ball - we ensure that the images are ready (`bgReady`, `paddleReady` and `ballReady`) before placing them on the canvas at specific x and y positions.
+For each element - background, paddles, and ball - we ensure that the images are ready (`bgReady`, `paddleReady` and `ballReady`) before placing them on the canvas at specific x and y positions. We use the context's `drawImage` function to render the images on the canvas.
 
 After drawing these elements, we move on to displaying the score. This involves configuring the font and text properties, followed by drawing the scores at the specified position on the canvas.
 
 ### 9 - The Main Game Loop
 
-We wrap everything together with the main game loop. This loop tirelessly calls the `update` and `draw` functions in succession, ensuring that the game state and the visuals are consistently updated.
+We wrap everything together with the main game loop. This loop calls the `update` and `draw` functions in succession, ensuring that the game state and the visuals are consistently updated.
 
 ```js
 var main = function () {
