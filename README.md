@@ -1,5 +1,5 @@
 <div align='center'>
-    <img alt='Logo' src='https://raw.githubusercontent.com/simonachkar/simonachkar.dev/main/public/logo.png'
+    <img alt='Logo' src='public/logo.png'
         width='100' />
 </div>
 
