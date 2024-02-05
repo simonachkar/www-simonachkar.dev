@@ -1,6 +1,7 @@
 ---
 title: 'Introduction to Web Development'
 date: '2023-10-02'
+imgUrl: 'https://res.cloudinary.com/dzoanfblg/image/upload/v1707099547/simonachkar.dev/x3camgippi6p9c33tpxm.png'
 ---
 
 Web Development is the art of crafting the digital landscapes we navigate every day, from the websites we browse to the applications that make our lives easier.

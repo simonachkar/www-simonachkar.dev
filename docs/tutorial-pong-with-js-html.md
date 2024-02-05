@@ -2,6 +2,7 @@
 title: 'Building a Pong Game with HTML and JavaScript'
 date: '2019-06-08'
 lastEdited: '2023-12-03'
+imgUrl: 'https://res.cloudinary.com/dzoanfblg/image/upload/v1707099548/simonachkar.dev/fv3mcrrn365vlqvvs1c7.png'
 ---
 
 **Pong** is a classic arcade game that serves as a great introduction to web game development. In this post, I will attempt to guide you through the process of building such a game using HTML and JavaScript. Inspired by a project undertaken during my undergraduate Computer Graphics course, I would like to share a simplified version of my code. Let’s get started!
