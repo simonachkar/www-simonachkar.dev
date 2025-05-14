@@ -3,6 +3,7 @@ import Socials from '@/components/shared/social-icons'
 import Navbar from '@/components/navbar'
 import { getDictionary } from '@/get-dictionaries'
 import { Locale } from '@/i18n-config'
+import Posts from '@/components/posts'
 
 type PageProps = {
   params: { lang: Locale }
@@ -27,6 +28,10 @@ export default async function Home({ params: { lang } }: PageProps) {
         </div>
 
         <Socials />
+
+        <hr className='mt-7' />
+
+        <Posts />
       </div>
     </main>
   )

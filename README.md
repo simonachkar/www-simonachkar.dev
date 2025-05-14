@@ -78,3 +78,4 @@ In addition to this, I've used the following libraries and resources:
 
 - [html-react-parser](https://www.npmjs.com/package/html-react-parser) library for parsing JSON content
 - [Minimal Prettier Setup](https://blog.stackademic.com/effortless-code-formatting-setting-up-prettier-with-next-js-13-460cbc6bbe2c)
+- [YT Video: Next.js Blog Website | How to Build a Blog App with Nextjs 13 by **Dave Gray**](https://www.youtube.com/watch?v=puIQhnjOfbc&t=689s)
