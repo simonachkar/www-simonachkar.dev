@@ -22,7 +22,7 @@
 </p>
 
 <p align='center'>
-    <img src='https://api.netlify.com/api/v1/badges/d7e8efc9-f4e9-4ab9-beab-12cd34be5552/deploy-status' alt='Netlify Status' />>
+    <img src='https://api.netlify.com/api/v1/badges/d7e8efc9-f4e9-4ab9-beab-12cd34be5552/deploy-status' alt='Netlify Status' />
 </p>
 
 ## Setup
