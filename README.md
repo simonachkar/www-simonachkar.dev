@@ -22,8 +22,7 @@
 </p>
 
 <p align='center'>
-    <img src='https://api.netlify.com/api/v1/badges/d7e8efc9-f4e9-4ab9-beab-12cd34be5552/deploy-status' alt='Netlify Status' />
-    <img style='padding-left: 5px' src='https://img.shields.io/badge/release-v0.2.0-white' alt='v0.2.0' />
+    <img src='https://api.netlify.com/api/v1/badges/d7e8efc9-f4e9-4ab9-beab-12cd34be5552/deploy-status' alt='Netlify Status' />>
 </p>
 
 ## Setup

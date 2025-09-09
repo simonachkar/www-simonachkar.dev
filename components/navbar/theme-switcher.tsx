@@ -21,7 +21,7 @@ export const ThemeSwitcher = () => {
     <>
       <button
         type='button'
-        className='text-sm p-2 rounded'
+        className='text-sm p-2 rounded-sm'
         onClick={() => {
           setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
         }}
