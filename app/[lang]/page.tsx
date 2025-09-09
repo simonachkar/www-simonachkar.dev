@@ -27,14 +27,14 @@ export default async function Home({ params }: PageProps) {
           <p className='mt-4'>{parse(content.tag)}</p>
         </div>
 
-        <div className='flex gap-2'>
+        <div className='flex gap-0 md:gap-2'>
           <Socials />
 
           <div className='mt-8'>
             <Link
               href='https://drive.google.com/uc?export=download&id=1pPHy2kkjfpAC18I8v8PgpmEgmuv71lke'
               download
-              className='inline-flex items-center gap-2 rounded-lg bg-[#39a265] dark:bg-[#4ad483] px-4 py-2 text-white dark:text-slate-800 transition text-sm'
+              className='inline-flex items-center gap-2 rounded-lg bg-[#39a265] dark:bg-[#4ad483] px-4 py-2 text-white dark:text-slate-800 transition text-xs md:text-sm'
             >
               {parse(content.downloadResume)}
             </Link>
