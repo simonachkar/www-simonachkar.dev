@@ -15,7 +15,7 @@ export default async function Footer({ lang }: FooterParams) {
   const content = dictionary['Footer']
 
   return (
-    <footer className='w-full px-5 pb-16 text-xs md:text-sm sm:pb-8 max-w-md md:max-w-lg'>
+    <footer className='w-full px-8 pb-16 text-xs md:text-sm sm:pb-8 max-w-md md:max-w-lg'>
       <Image
         src='/logo.png'
         alt='Simon Achkar Logo'
