@@ -6,7 +6,7 @@
   },
   "Footer": {
     "copyright": "© Simon Achkar",
-    "builtWith": "Construit avec <a href='https://nextjs.org' target='_blank' rel='noreferrer'>Next.js</a> et <a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>Tailwind CSS</a>, déployé avec <a href='https://vercel.com' target='_blank' rel='noreferrer'>Vercel</a>. Le texte est défini dans les polices <a href='https://fonts.google.com/specimen/Montserrat' target='_blank' rel='noreferrer'>Montserrat</a> et <a href='https://fonts.google.com/specimen/Rubik' target='_blank' rel='noreferrer'>Rubik</a>.",
+    "builtWith": "Construit avec <a href='https://nextjs.org' target='_blank' rel='noreferrer'>Next.js</a> et <a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>Tailwind CSS</a>, déployé avec <a href='https://www.netlify.com' target='_blank' rel='noreferrer'>Netlify</a>. Le texte est défini dans les polices <a href='https://fonts.google.com/specimen/Montserrat' target='_blank' rel='noreferrer'>Montserrat</a> et <a href='https://fonts.google.com/specimen/Rubik' target='_blank' rel='noreferrer'>Rubik</a>.",
     "madeWith": "Réalisé avec"
   }
 }

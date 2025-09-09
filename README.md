@@ -15,15 +15,15 @@
         Tailwind CSS
     </a>
     and deployed with
-    <a href='https://vercel.com' target='_blank' rel='noreferrer'>
-        Vercel
+    <a href='https://www.netlify.com' target='_blank' rel='noreferrer'>
+        Netlify
     </a>
     .
 </p>
 
 <p align='center'>
-    <img src='https://vercelbadge.vercel.app/api/simonachkar/simonachkar.dev' alt='Vercel Status' />
-    <img style='padding-left: 5px' src='https://img.shields.io/badge/release-v.0.1.0-blue' alt='v0.1.0' />
+    <img src='https://api.netlify.com/api/v1/badges/d7e8efc9-f4e9-4ab9-beab-12cd34be5552/deploy-status' alt='Netlify Status' />
+    <img style='padding-left: 5px' src='https://img.shields.io/badge/release-v0.2.0-white' alt='v0.2.0' />
 </p>
 
 <div style='display: flex; gap: 10px; justify-content: center; margin: auto'>

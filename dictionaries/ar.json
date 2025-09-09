@@ -6,7 +6,7 @@
   },
   "Footer": {
     "copyright": "© سيمون أشقر",
-    "builtWith": "تم البناء باستخدام <a href='https://nextjs.org' target='_blank' rel='noreferrer'>Next.js</a> و <a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>Tailwind CSS</a>، تمت الاستضافة مع <a href='https://vercel.com' target='_blank' rel='noreferrer'>Vercel</a>. تم وضع النص باستخدام خطوط <a href='https://fonts.google.com/specimen/Rubik' target='_blank' rel='noreferrer'>Rubik</a> و <a href='https://fonts.google.com/specimen/Montserrat' target='_blank' rel='noreferrer'>Montserrat</a>.",
+    "builtWith": "تم البناء باستخدام <a href='https://nextjs.org' target='_blank' rel='noreferrer'>Next.js</a> و <a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>Tailwind CSS</a>، تمت الاستضافة مع <a href='https://www.netlify.com' target='_blank' rel='noreferrer'>Netlify</a>. تم وضع النص باستخدام خطوط <a href='https://fonts.google.com/specimen/Rubik' target='_blank' rel='noreferrer'>Rubik</a> و <a href='https://fonts.google.com/specimen/Montserrat' target='_blank' rel='noreferrer'>Montserrat</a>.",
     "madeWith": "صُنع مع"
   }
 }
