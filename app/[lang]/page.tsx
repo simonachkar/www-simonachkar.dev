@@ -8,7 +8,7 @@ type PageProps = {
 }
 
 export default async function Home({ params }: PageProps) {
-   const { lang } = await params
+  const { lang } = await params
   const dictionary = await getDictionary(lang)
   const content = dictionary['Index']
 
@@ -27,6 +27,17 @@ export default async function Home({ params }: PageProps) {
         </div>
 
         <Socials />
+
+        <hr className='mt-8'></hr>
+
+        <section className='mt-8'>
+          <span className='block w-10 h-1.5 bg-[#39a265] dark:bf-[#4ad483] rounded mb-4'></span>
+          <div className='prose dark:prose-invert max-w-none text-[14px]'>
+            {parse(content.aboutText)}
+          </div>
+        </section>
+
+        <hr className='mt-8'></hr>
       </div>
     </main>
   )
