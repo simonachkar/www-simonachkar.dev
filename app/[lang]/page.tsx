@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import parse from 'html-react-parser'
 import Socials from '@/components/shared/social-icons'
 import Navbar from '@/components/navbar'
@@ -26,12 +27,24 @@ export default async function Home({ params }: PageProps) {
           <p className='mt-4'>{parse(content.tag)}</p>
         </div>
 
-        <Socials />
+        <div className='flex gap-2'>
+          <Socials />
+
+          <div className='mt-8'>
+            <Link
+              href='https://drive.google.com/uc?export=download&id=1pPHy2kkjfpAC18I8v8PgpmEgmuv71lke'
+              download
+              className='inline-flex items-center gap-2 rounded-lg bg-[#39a265] dark:bg-[#4ad483] px-4 py-2 text-white dark:text-slate-800 transition text-sm'
+            >
+              {parse(content.downloadResume)}
+            </Link>
+          </div>
+        </div>
 
         <hr className='mt-8'></hr>
 
         <section className='mt-8'>
-          <span className='block w-10 h-1.5 bg-[#39a265] dark:bf-[#4ad483] rounded mb-4'></span>
+          <span className='block w-10 h-1.5 bg-[#39a265] dark:bg-[#4ad483] rounded mb-4'></span>
           <div className='prose dark:prose-invert max-w-none text-[14px]'>
             {parse(content.aboutText)}
           </div>
