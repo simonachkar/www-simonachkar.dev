@@ -26,10 +26,6 @@
     <img style='padding-left: 5px' src='https://img.shields.io/badge/release-v0.2.0-white' alt='v0.2.0' />
 </p>
 
-<div style='display: flex; gap: 10px; justify-content: center; margin: auto'>
-    <img src='./assets//demo.png' alt='Demo' />
-</div>
-
 ## Getting Started
 
 To get up and running, install dependencies and run the development server:
