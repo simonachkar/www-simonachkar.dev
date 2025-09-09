@@ -33,7 +33,7 @@ export default async function RootLayout({
   return (
     <html lang={lang} dir={isAr ? 'rtl' : 'ltr'} suppressHydrationWarning>
       <body
-        className={`dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-screen-md
+        className={`dark:bg-slate-800 dark:text-slate-200 mx-auto max-w-(--breakpoint-md)
         ${isAr ? `${rubik.className} tracking-wider` : montserrat.className} `}
       >
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>

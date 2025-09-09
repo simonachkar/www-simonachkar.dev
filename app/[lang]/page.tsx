@@ -44,7 +44,7 @@ export default async function Home({ params }: PageProps) {
         <hr className='mt-8'></hr>
 
         <section className='mt-8'>
-          <span className='block w-10 h-1.5 bg-[#39a265] dark:bg-[#4ad483] rounded mb-4'></span>
+          <span className='block w-10 h-1.5 bg-[#39a265] dark:bg-[#4ad483] rounded-sm mb-4'></span>
           <div className='prose dark:prose-invert max-w-none text-[14px]'>
             {parse(content.aboutText)}
           </div>
