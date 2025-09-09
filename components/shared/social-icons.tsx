@@ -12,7 +12,7 @@ const SocialLink = ({ href, svg, target = '' }: SocialLinkProps) => {
   return (
     <li className='mr-5 text-xs'>
       <a
-        className='block hover:text-black/50'
+        className='block'
         href={href}
         target={target}
         rel='noreferrer'

@@ -2,19 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-.dark a {
-  color: #4ad483;
+:root {
+  --primary: #39a265;
 }
 
-.light a {
-  color: #39a265;
+.dark {
+  --primary: #4ad483;
 }
 
 a {
-  text-decoration: underline;
-  font-weight: 500;
+  color: var(--primary);
 }
 
 a:hover {
-  filter: brightness(1.25);
+  @apply underline font-medium transition duration-150 ease-in-out;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
 }
