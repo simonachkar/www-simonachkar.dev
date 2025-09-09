@@ -1,9 +1,9 @@
+<h1 align='center'>simonachkar.dev</h1>
+
 <div align='center'>
     <img alt='Logo' src='public/logo.png'
         width='100' />
 </div>
-
-<h1 align='center'>simonachkar.dev</h1>
 
 <p align='center'>
     My personal website (4th iteration). Built with
@@ -26,7 +26,7 @@
     <img style='padding-left: 5px' src='https://img.shields.io/badge/release-v0.2.0-white' alt='v0.2.0' />
 </p>
 
-## Getting Started
+## Setup
 
 To get up and running, install dependencies and run the development server:
 
@@ -38,9 +38,7 @@ npm install
 npm run dev
 ```
 
-## About this project
-
-This is a test 
+## Stack
 
 ### Next.js
 
@@ -58,9 +56,7 @@ SVG components, located in the `components/svg` directory, are derived from [ico
 
 Internationalization (i18n) is a key feature of this project, with support for English, French, and Arabic languages. You can find more information on i18n in Next.js in the [Next.js Internationalization docs](https://nextjs.org/docs/app/building-your-application/routing/internationalization).
 
-I followed the example set by this [repo](https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing).
-
-No 3rd-party libraries were needed for i18n.
+I followed the example set by this [repo](https://github.com/vercel/next.js/tree/canary/examples/app-dir-i18n-routing). No 3rd-party libraries were needed for i18n.
 
 ### Dark/Light Mode
 
