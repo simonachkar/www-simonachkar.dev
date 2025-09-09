@@ -19,14 +19,14 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode
-  params: { lang: string }
+  params: Promise<{ lang: 'en' | 'fr' | 'ar' }>
 }) {
-  const { lang } = params
+  const { lang } = await params
   const isAr = lang === 'ar'
 
   return (

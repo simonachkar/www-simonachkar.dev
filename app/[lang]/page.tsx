@@ -2,13 +2,13 @@ import parse from 'html-react-parser'
 import Socials from '@/components/shared/social-icons'
 import Navbar from '@/components/navbar'
 import { getDictionary } from '@/get-dictionaries'
-import { Locale } from '@/i18n-config'
 
 type PageProps = {
-  params: { lang: Locale }
+  params: Promise<{ lang: 'en' | 'fr' | 'ar' }>
 }
 
-export default async function Home({ params: { lang } }: PageProps) {
+export default async function Home({ params }: PageProps) {
+   const { lang } = await params
   const dictionary = await getDictionary(lang)
   const content = dictionary['Index']
 
