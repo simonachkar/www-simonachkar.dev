@@ -19,15 +19,16 @@ export async function generateStaticParams() {
   return i18n.locales.map((locale) => ({ lang: locale }))
 }
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
   params,
 }: {
   children: React.ReactNode
-  params: { lang: string }
+  params: Promise<{ lang: string }>
 }) {
-  const { lang } = params
+  const { lang } = await params
   const isAr = lang === 'ar'
+  const langLocale = lang as Locale
 
   return (
     <html lang={lang} dir={isAr ? 'rtl' : 'ltr'} suppressHydrationWarning>
@@ -37,7 +38,7 @@ export default function RootLayout({
       >
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
-          <Footer lang={lang as Locale} />
+          <Footer lang={langLocale} />
         </ThemeProvider>
       </body>
     </html>

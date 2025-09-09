@@ -2,6 +2,7 @@ import Image from 'next/image'
 import parse from 'html-react-parser'
 import { getDictionary } from '@/get-dictionaries'
 import { Locale } from '@/i18n-config'
+import pkg from '@/package.json'
 
 const REPO_URL = 'https://github.com/simonachkar/simonachkar.dev'
 
@@ -14,7 +15,7 @@ export default async function Footer({ lang }: FooterParams) {
   const content = dictionary['Footer']
 
   return (
-    <footer className='w-full px-5 pb-16 text-xs md:text-sm sm:pb-8 max-w-md md:max-w-lg'>
+    <footer className='w-full px-8 pb-16 text-xs md:text-sm sm:pb-8 max-w-md md:max-w-lg'>
       <Image
         src='/logo.png'
         alt='Simon Achkar Logo'
@@ -23,9 +24,9 @@ export default async function Footer({ lang }: FooterParams) {
         height={43}
         priority
       />
-      <p className='mt-1.5'>{parse(content.copyright)}</p>
-      <p className='mt-1.5'>{parse(content.builtWith)}</p>
-      <p className='mt-1.5'>
+      <p className='mt-1.5 text-xs'>{parse(content.copyright)}</p>
+      <p className='mt-1.5 text-xs'>{parse(content.builtWith)}</p>
+      <p className='mt-1.5 text-xs mb-3'>
         {parse(content.madeWith)}{' '}
         <span className='ml-0.5'>
           <a
@@ -39,9 +40,14 @@ export default async function Footer({ lang }: FooterParams) {
         </span>
       </p>
 
-      <p className='mt-4 font-mono font-light text-[10px] md:text-[12px]'>
-        v0.1.0
-      </p>
+      <a
+        href={REPO_URL}
+        target='_blank'
+        rel='noreferrer'
+        className='mt-5 font-mono font-light text-xs'
+      >
+        v{pkg.version}
+      </a>
     </footer>
   )
 }

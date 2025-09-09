@@ -2,11 +2,13 @@
   "Index": {
     "name": "Simon Achkar",
     "title": "Senior Software Developer at <a href='https://www.redspace.com/' target='_blank' rel='noreferrer'>REDspace</a>",
-    "tag": "I build digital solutions for the web"
+    "tag": "I build digital solutions for the web",
+    "downloadResume": "Download Resume",
+    "aboutText": "I am a Full-Stack Developer with over 6 years of experience, specializing in designing, building, and hosting web projects.<br/><br/>Originating from Lebanon, my early passion for computers lead me to a BSc in Computer Science at the <a href='https://www.balamand.edu.lb' target='_blank' rel='noreferrer'>University of Balamand</a>. In 2018, I embarked on a journey to the East Coast of Canada, to pursue my Master’s degree at <a href='https://www.smu.ca' target='_blank' rel='noreferrer'>Saint Mary’s University</a>.<br/><br/>Currently I’m based in Halifax, Nova Scotia, where I continue my journey in the world of software development, exploring innovative solutions with <a href='https://redspace.com/' target='_blank' rel='noreferrer'>REDspace</a>, indulging myself in side projects on the weekends, and occasionally sharing my expertise as a guest lecturer in front-end development at Saint Mary’s University.<br/><br/>When I’m not looking at a screen, I play music on the Oud and sing sometimes."
   },
   "Footer": {
     "copyright": "© Simon Achkar",
-    "builtWith": "Built with <a href='https://nextjs.org' target='_blank' rel='noreferrer'>Next.js</a> and <a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>Tailwind CSS</a>, deployed with <a href='https://vercel.com' target='_blank' rel='noreferrer'>Vercel</a>. Text is set in the <a href='https://fonts.google.com/specimen/Montserrat' target='_blank' rel='noreferrer'>Montserrat</a> and <a href='https://fonts.google.com/specimen/Rubik' target='_blank' rel='noreferrer'>Rubik</a> typefaces.",
+    "builtWith": "Built with <a href='https://nextjs.org' target='_blank' rel='noreferrer'>Next.js</a> and <a href='https://tailwindcss.com' target='_blank' rel='noreferrer'>Tailwind CSS</a>, deployed with <a href='https://www.netlify.com' target='_blank' rel='noreferrer'>Netlify</a>. Text is set in the <a href='https://fonts.google.com/specimen/Montserrat' target='_blank' rel='noreferrer'>Montserrat</a> and <a href='https://fonts.google.com/specimen/Rubik' target='_blank' rel='noreferrer'>Rubik</a> typefaces.",
     "madeWith": "Made with"
   }
 }
