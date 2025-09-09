@@ -23,9 +23,9 @@ export default async function Footer({ lang }: FooterParams) {
         height={43}
         priority
       />
-      <p className='mt-1.5'>{parse(content.copyright)}</p>
-      <p className='mt-1.5'>{parse(content.builtWith)}</p>
-      <p className='mt-1.5'>
+      <p className='mt-1.5 text-xs'>{parse(content.copyright)}</p>
+      <p className='mt-1.5 text-xs'>{parse(content.builtWith)}</p>
+      <p className='mt-1.5 text-xs'>
         {parse(content.madeWith)}{' '}
         <span className='ml-0.5'>
           <a
@@ -39,7 +39,7 @@ export default async function Footer({ lang }: FooterParams) {
         </span>
       </p>
 
-      <p className='mt-4 font-mono font-light text-[10px] md:text-[12px]'>
+      <p className='mt-4 font-mono font-light text-xs'>
         v0.1.0
       </p>
     </footer>
