@@ -24,10 +24,11 @@ export default async function RootLayout({
   params,
 }: {
   children: React.ReactNode
-  params: Promise<{ lang: 'en' | 'fr' | 'ar' }>
+  params: Promise<{ lang: string }>
 }) {
   const { lang } = await params
   const isAr = lang === 'ar'
+  const langLocale = lang as Locale
 
   return (
     <html lang={lang} dir={isAr ? 'rtl' : 'ltr'} suppressHydrationWarning>
@@ -37,7 +38,7 @@ export default async function RootLayout({
       >
         <ThemeProvider attribute='class' defaultTheme='system' enableSystem>
           {children}
-          <Footer lang={lang as Locale} />
+          <Footer lang={langLocale} />
         </ThemeProvider>
       </body>
     </html>
