@@ -30,7 +30,7 @@ export default async function Home({ params }: PageProps) {
         <div className='flex gap-0 md:gap-2'>
           <Socials />
 
-          <div className='mt-8'>
+          <div className='mt-8 rtl:pr-3'>
             <Link
               href='https://drive.google.com/uc?export=download&id=1pPHy2kkjfpAC18I8v8PgpmEgmuv71lke'
               download
